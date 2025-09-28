@@ -5,58 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gagandeep Singh | Portfolio</title>
   <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f4f4f9;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f9;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
-      background: #222;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: #fff;
-      padding: 20px 0;
+      padding: 60px 20px;
       text-align: center;
     }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p { margin: 5px 0; font-size: 1.2em; }
+    header h1 { font-size: 2.8em; margin-bottom: 10px; }
+    header p { font-size: 1.2em; opacity: 0.9; }
 
     nav {
-      background: #444;
-      padding: 10px;
+      background: #222;
+      padding: 12px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: #fff;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: color 0.3s;
     }
     nav a:hover { color: #ffd700; }
 
     section {
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 50px 20px;
+      max-width: 1000px;
       margin: auto;
     }
     h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
+      font-size: 2em;
       margin-bottom: 20px;
-      color: #222;
+      color: #1e3c72;
+      border-bottom: 2px solid #ddd;
+      display: inline-block;
+      padding-bottom: 5px;
     }
+
     .skills span {
       display: inline-block;
-      background: #eee;
-      margin: 5px;
-      padding: 8px 12px;
-      border-radius: 5px;
+      background: #e0e7ff;
+      color: #1e3c72;
+      margin: 6px;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: 500;
+      transition: 0.3s;
     }
+    .skills span:hover {
+      background: #1e3c72;
+      color: #fff;
+    }
+
+    ul li {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
     footer {
-      background: #222;
+      background: #1e3c72;
       color: #fff;
       text-align: center;
-      padding: 15px;
-      margin-top: 30px;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2em; }
+      nav a { margin: 0 8px; font-size: 0.9em; }
     }
   </style>
 </head>
@@ -104,7 +134,7 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:gsingh10110@gmail.com">gagan10110@gmail.com</a></p>
+    <p>Email: <a href="mailto:gagan10110@gmail.com">gagan10110@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/gagan10110" target="_blank">github.com/gagan10110</a></p>
   </section>
 
